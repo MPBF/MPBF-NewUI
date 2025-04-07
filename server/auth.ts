@@ -48,7 +48,7 @@ const generateToken = (user: User): string => {
   
   // Use explicit SignOptions type for the options
   const options: jwt.SignOptions = { 
-    expiresIn: JWT_EXPIRES_IN 
+    expiresIn: JWT_EXPIRES_IN as jwt.SignOptions["expiresIn"]
   };
   
   return jwt.sign(
@@ -61,7 +61,6 @@ const generateToken = (user: User): string => {
     options
   );
 };
-
 // Middleware to verify the JWT token
 const authenticateJwt = (req: Request, res: Response, next: NextFunction) => {
   try {
