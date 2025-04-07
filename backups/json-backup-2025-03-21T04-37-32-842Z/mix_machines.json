@@ -1,0 +1,47 @@
+[
+  {
+    "id": 8,
+    "mix_id": 12,
+    "machine_id": 3
+  },
+  {
+    "id": 9,
+    "mix_id": 13,
+    "machine_id": 2
+  },
+  {
+    "id": 10,
+    "mix_id": 14,
+    "machine_id": 2
+  },
+  {
+    "id": 11,
+    "mix_id": 14,
+    "machine_id": 3
+  },
+  {
+    "id": 12,
+    "mix_id": 15,
+    "machine_id": 3
+  },
+  {
+    "id": 13,
+    "mix_id": 15,
+    "machine_id": 2
+  },
+  {
+    "id": 14,
+    "mix_id": 16,
+    "machine_id": 2
+  },
+  {
+    "id": 15,
+    "mix_id": 17,
+    "machine_id": 3
+  },
+  {
+    "id": 16,
+    "mix_id": 17,
+    "machine_id": 2
+  }
+]

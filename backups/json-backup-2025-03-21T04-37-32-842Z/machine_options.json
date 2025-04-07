@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "option_details": "Mono Layer",
+    "section": "Extrusion"
+  },
+  {
+    "id": 2,
+    "option_details": "HDPE",
+    "section": "Extrusion"
+  },
+  {
+    "id": 3,
+    "option_details": "LDPE",
+    "section": "Extrusion"
+  },
+  {
+    "id": 4,
+    "option_details": "Treatment",
+    "section": "Extrusion"
+  },
+  {
+    "id": 5,
+    "option_details": "2+2 Color",
+    "section": "Printing"
+  },
+  {
+    "id": 6,
+    "option_details": "3+3 Printing",
+    "section": "Printing"
+  },
+  {
+    "id": 7,
+    "option_details": "4+4 Printing",
+    "section": "Printing"
+  },
+  {
+    "id": 8,
+    "option_details": "1+1 Printing",
+    "section": "Printing"
+  },
+  {
+    "id": 9,
+    "option_details": "In Line Printing",
+    "section": "Extrusion"
+  },
+  {
+    "id": 10,
+    "option_details": "High Speed T-shirt Bags",
+    "section": "Cutting"
+  },
+  {
+    "id": 11,
+    "option_details": "Bottom Sealing Bags",
+    "section": "Cutting"
+  },
+  {
+    "id": 12,
+    "option_details": "Coreless Table Cover",
+    "section": "Cutting"
+  },
+  {
+    "id": 13,
+    "option_details": "Coreless Garbage Bags",
+    "section": "Cutting"
+  },
+  {
+    "id": 14,
+    "option_details": "Core Table Covers",
+    "section": "Cutting"
+  },
+  {
+    "id": 15,
+    "option_details": "Photo Cell",
+    "section": "Cutting"
+  },
+  {
+    "id": 16,
+    "option_details": "Auto Punching",
+    "section": "Cutting"
+  },
+  {
+    "id": 17,
+    "option_details": "Rotation Systems",
+    "section": "Extrusion"
+  },
+  {
+    "id": 18,
+    "option_details": "Auto Shafting",
+    "section": "Extrusion"
+  },
+  {
+    "id": 19,
+    "option_details": "Auto Loader",
+    "section": "Extrusion"
+  },
+  {
+    "id": 20,
+    "option_details": "ABA",
+    "section": "Extruder"
+  },
+  {
+    "id": 21,
+    "option_details": "In Line Printing",
+    "section": "Extruder"
+  }
+]

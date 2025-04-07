@@ -1,0 +1,484 @@
+/* RTL (Right-to-Left) support for Arabic UI
+   This file contains utility classes and overrides for RTL layout */
+
+/* Global RTL adjustments */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* RTL FlexBox direction adjustments */
+.rtl .flex-row {
+  flex-direction: row-reverse;
+}
+
+/* RTL margins and paddings */
+.rtl .ml-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+.rtl .mr-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+/* RTL Button icons spacing */
+.rtl .btn-icon-start svg,
+.rtl .btn-icon-start .icon {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+.rtl .btn-icon-end svg,
+.rtl .btn-icon-end .icon {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+/* RTL Form elements */
+.rtl .form-label {
+  text-align: right;
+}
+
+/* RTL Tables */
+.rtl table th,
+.rtl table td {
+  text-align: right;
+}
+
+/* RTL List items */
+.rtl ul li,
+.rtl ol li {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+/* RTL Dropdown menus */
+.rtl .dropdown-menu {
+  text-align: right;
+}
+
+/* RTL Sidebar */
+.rtl .sidebar-icon {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+/* RTL Input groups */
+.rtl .input-group-text:first-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+  border-right-width: 1px;
+  border-left-width: 0;
+}
+
+.rtl .input-group-text:last-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+
+/* RTL card layout */
+.rtl .card-header {
+  text-align: right;
+}
+
+/* RTL Alert icons */
+.rtl .alert-icon {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+/* RTL RTL Modal */
+.rtl .modal-header .close {
+  margin: -1rem auto -1rem -1rem;
+}
+
+/* RTL Breadcrumb separators */
+.rtl .breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+
+.rtl .breadcrumb-item + .breadcrumb-item {
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+
+/* RTL checkbox and radio positions */
+.rtl .form-check {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+
+.rtl .form-check-input {
+  margin-left: 0;
+  margin-right: -1.25rem;
+}
+
+/* RTL list groups */
+.rtl .list-group {
+  padding-right: 0;
+}
+
+/* RTL pagination */
+.rtl .pagination {
+  padding-right: 0;
+}
+
+/* RTL Arabic font settings */
+.rtl {
+  font-family: 'Tajawal', 'Libre Baskerville', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px; /* Base font size for Arabic */
+  letter-spacing: 0; /* Disable letter spacing for Arabic */
+}
+
+/* Adjust font sizes for different elements in Arabic */
+.rtl h1 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.rtl h2 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.rtl h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.rtl h4 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* Arabic text needs more spacing for readability */
+.rtl p, .rtl div, .rtl span, .rtl button, .rtl input, .rtl select, .rtl textarea {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: normal;
+  word-spacing: 0.05em;
+}
+
+/* Adjust layout and spacing for Arabic */
+.rtl .container, .rtl .content-area {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* RTL Arabic numbers and dates */
+.rtl .arabic-numbers {
+  font-feature-settings: "tnum";
+}
+
+/* Loader animations */
+.rtl .spinner {
+  animation-direction: reverse;
+}
+
+/* Progress bars */
+.rtl .progress-bar {
+  float: right;
+}
+
+/* Override Shadcn components */
+.rtl [class*="shadcn"] {
+  direction: rtl;
+}
+
+/* Fix layout issues in Arabic */
+.rtl .overflow-x-auto {
+  overflow-x: visible;
+}
+
+/* Better handle long Arabic text */
+.rtl .text-ellipsis {
+  max-width: 100%;
+}
+
+/* Fix dashboard layout */
+.rtl .dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  width: 100% !important;
+  max-width: 100% !important;
+  direction: rtl !important;
+  overflow-x: visible !important;
+}
+
+/* Dashboard card fixes for Arabic */
+.rtl .grid-cols-1,
+.rtl .grid-cols-2,
+.rtl .grid-cols-3,
+.rtl .grid-cols-4,
+.rtl .grid-cols-5,
+.rtl .grid-cols-6,
+.rtl .grid-cols-12 {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  direction: rtl !important;
+  overflow-x: visible !important;
+}
+
+.rtl [class*="grid-cols-"] > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  direction: rtl !important;
+}
+
+/* Fix for main content area */
+.rtl .main-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: visible !important;
+}
+
+/* RTL content wrapper to ensure full width across dashboard */
+.rtl-content-wrapper {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  overflow-x: visible !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+/* Additional RTL main content fixes */
+.rtl-main {
+  text-align: right;
+}
+
+.rtl-main .flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rtl-main .grid {
+  direction: rtl;
+  width: 100% !important;
+  max-width: 100% !important;
+  grid-auto-flow: dense;
+}
+
+.rtl-main .grid > div,
+.rtl-main .grid > li,
+.rtl-main .grid > article,
+.rtl-main .grid > section {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.rtl-main .align-items-end {
+  align-items: flex-start;
+}
+
+.rtl-main .align-items-start {
+  align-items: flex-end;
+}
+
+/* Fix padding and margin for RTL */
+.rtl-main [class*="pr-"] {
+  padding-right: 0;
+  padding-left: var(--padding-value, 1rem);
+}
+
+.rtl-main [class*="pl-"] {
+  padding-left: 0;
+  padding-right: var(--padding-value, 1rem);
+}
+
+.rtl-main [class*="mr-"] {
+  margin-right: 0;
+  margin-left: var(--margin-value, 1rem);
+}
+
+.rtl-main [class*="ml-"] {
+  margin-left: 0;
+  margin-right: var(--margin-value, 1rem);
+}
+
+/* Fix for cards in Arabic */
+.rtl .card {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Make sure tables don't overflow */
+.rtl table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: fixed;
+  direction: rtl !important;
+}
+
+.rtl table th,
+.rtl table td {
+  text-align: right !important;
+}
+
+/* Form controls in RTL */
+.rtl input,
+.rtl textarea,
+.rtl select {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.rtl label {
+  text-align: right !important;
+  direction: rtl !important;
+  display: block;
+  width: 100%;
+}
+
+/* Specific fix for stat cards */
+.rtl .stat-card {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Fix for badge/chip elements */
+.rtl .badge, .rtl .chip {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* RTL fixes for Popover and Dialog components */
+.rtl [role="dialog"],
+.rtl [data-radix-popper-content-wrapper] {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+.rtl [role="dialog"] *,
+.rtl [data-radix-popper-content-wrapper] * {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Override shadcn dropdown menus in RTL */
+.rtl [role="menu"] {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.rtl [role="menuitem"] {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  justify-content: flex-start !important;
+  text-align: right !important;
+}
+
+/* Fix for modal dialogs in RTL */
+.rtl [role="dialog"][data-state="open"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Fix for fixed position elements in RTL mode */
+.rtl .fixed,
+.rtl .absolute {
+  direction: rtl !important;
+}
+
+/* Fix for Radix UI components */
+.rtl [data-radix-scroll-area-viewport],
+.rtl [data-radix-toast-viewport] {
+  direction: rtl !important;
+}
+
+/* Make .rtl-auto-fix class for any element needing RTL fixes */
+.rtl .rtl-auto-fix {
+  direction: rtl !important;
+  text-align: right !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+}
+
+/* Browser-specific RTL fixes */
+
+/* Safari specific fixes */
+.browser-safari.rtl .rtl-content-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  transform: translateZ(0); /* Force GPU acceleration */
+  -webkit-overflow-scrolling: touch; /* Improve scroll on mobile Safari */
+}
+
+.browser-safari.rtl input,
+.browser-safari.rtl select,
+.browser-safari.rtl textarea {
+  -webkit-appearance: none; /* Remove Safari's default styling */
+  margin: 0; /* Safari adds margin sometimes */
+}
+
+/* Firefox specific fixes */
+.browser-firefox.rtl .responsive-table {
+  scrollbar-width: thin; /* Better scrollbars */
+}
+
+.browser-firefox.rtl .grid {
+  width: 100% !important;
+  display: grid !important;
+}
+
+/* Edge specific fixes */
+.browser-edge.rtl .responsive-container,
+.browser-edge-chromium.rtl .responsive-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: visible;
+}
+
+/* Chrome specific fixes */
+.browser-chrome.rtl [data-radix-popper-content-wrapper] {
+  transform: translateZ(0); /* Fix for Chrome rendering issues */
+}
+
+/* Device specific fixes */
+.device-mobile.rtl .responsive-container {
+  padding: 0.5rem !important; /* Smaller padding on mobile */
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.device-tablet.rtl .responsive-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 1rem !important;
+}
+
+/* Table responsiveness for different browsers */
+.rtl .responsive-table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Fix for Safari flexbox issues in RTL */
+.browser-safari.rtl .flex {
+  display: -webkit-flex !important;
+  display: flex !important;
+}

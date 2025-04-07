@@ -1,0 +1,32 @@
+MPBF System:
+Its internal web application to record customer orders and controlling the production of those orders and reporting the necessary information.
+Users type: 
+1-	Admin
+2-	Production manager
+3-	Salesperson
+4-	Operator 
+System Tables:
+1-	Customer (Customer Identifier, Customer Name, Customer Drawer No, Salesperson, Address, and Photo)
+2-	Salesperson (Salesperson identifier, Salesperson Name, Salesperson Phone)
+3-	Product Group (Group Identifier, Group Name, Group Code)
+4-	Product (Product identifier, Product Name, Product Code, Product Group)
+5-	Item (Item identifier, Item Customer, Item Category, Item Product, Size, Thickness, Cylinder (Inch), Cutting Length (CM), Material, Mast Batch, Printed, Cutting Unit, Weight (Kg), Packing, Punching, Cover, Notes, Quantity)
+6-	Order (Order identifier, Order Date, Order Customer, Order Note)
+7-	Job Order (Job Order identifier, Item identifier, Item Customer, Item Category, Item Product, Size, Thickness, Cylinder (Inch), Cutting Length (CM), Material, Mast Batch, Printed, Cutting Unit, Weight (Kg), Packing, Punching, Cover, Notes, Quantity).
+8-	User (User Identifier, Username, User section, User Permission, User Mobile)
+9-	Production (Order identifier, job order identifier, customer name, product name, Production Qty, Operator Name, section, Note).
+Relationship between Tables:
+1-	The customer has more than one item, and each item is assigned to one customer.
+2-	Product groups have more than one product and each product is assigned to one product group.
+3-	Order has more than job order and each job order assigned to one order.
+4-	Customers have more than the orders for each order assigned to one customer.
+5-	One job order has one item, and each item is assigned to one job order.
+Function: 
+1-	Create, edit, delete, search, for all tables.
+2-	 Report and Printing PDF for all tables.
+3-	Statical and analytical function and report.
+4-	Importing and exporting of all tables.
+Note:
+1-	No Need any thing related to the cost or sales or money.
+2-	The system is Internal for the company user only.
+3-	No need for high security.

@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1741181636557,
+      "tag": "0000_organic_marauders",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1741265479717,
+      "tag": "0001_optimal_norrin_radd",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1741294813525,
+      "tag": "0002_ambiguous_mercury",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+@import url('./styles/rtl.css');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cross-browser compatibility */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+/* Custom animations */
+.collapsible-section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapsible-section.open {
+  max-height: 500px; /* Adjust based on content size */
+}
+
+/* RTL-specific styles */
+.rtl .chevron-icon {
+  transform: scaleX(-1);
+}
+
+/* Collapsible section animation */
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.chevron-icon.rotate {
+  transform: rotate(90deg);
+}
+
+/* RTL handling for rotated chevron */
+.rtl .chevron-icon.rotate {
+  transform: scaleX(-1) rotate(90deg);
+}
+
+@layer base {
+  :root {
+    --primary: 171 100% 33%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 195 54% 35%;
+    --secondary-foreground: 0 0% 100%;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Libre Baskerville', serif;
+    @apply antialiased bg-background text-foreground;
+    letter-spacing: 0.015em;
+    font-feature-settings: "liga" 1, "kern" 1;
+    -webkit-text-size-adjust: 100%; /* Prevent font size adjustment in all browsers */
+  }
+
+  .rtl body {
+    font-family: 'Tajawal', 'Libre Baskerville', sans-serif;
+    letter-spacing: 0;
+    font-feature-settings: "liga" 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    @apply font-bold;
+    letter-spacing: 0.01em;
+  }
+
+  .rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6 {
+    font-family: 'Tajawal', 'Libre Baskerville', sans-serif;
+    @apply font-bold;
+    letter-spacing: 0;
+  }
+
+  /* Custom MPBF colors */
+  .bg-mpbf-teal {
+    background-color: #00A898;
+  }
+  
+  .bg-mpbf-navy {
+    background-color: #1D4582;
+  }
+  
+  .text-mpbf-teal {
+    color: #00A898;
+  }
+  
+  .text-mpbf-navy {
+    color: #1D4582;
+  }
+
+  .border-mpbf-teal {
+    border-color: #00A898;
+  }
+
+  .border-mpbf-navy {
+    border-color: #1D4582;
+  }
+}
+
+/* Responsive design fixes for all browsers */
+@layer utilities {
+  /* Add support for responsive height */
+  .min-h-screen {
+    min-height: 100vh;
+    /* Fallbacks for browsers that don't support vh */
+    min-height: -webkit-fill-available;
+    min-height: -moz-available;
+    min-height: fill-available;
+  }
+
+  /* Responsive content container */
+  .responsive-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    /* Scale properly on various devices */
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* Fix for zoom issues on mobile browsers */
+  @media screen and (max-width: 767px) {
+    input, select, textarea {
+      font-size: 16px !important; /* Prevents auto-zoom on iOS */
+    }
+  }
+
+  /* Improve table responsiveness in all browsers */
+  .responsive-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}

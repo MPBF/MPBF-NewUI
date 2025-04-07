@@ -1,0 +1,118 @@
+{
+  "timestamp": "2025-03-21T04:37:34.397Z",
+  "tables": [
+    {
+      "table": "categories",
+      "rows": 17,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/categories.json"
+    },
+    {
+      "table": "customers",
+      "rows": 2129,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/customers.json"
+    },
+    {
+      "table": "items",
+      "rows": 1828,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/items.json"
+    },
+    {
+      "table": "job_orders",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/job_orders.json"
+    },
+    {
+      "table": "machine_options",
+      "rows": 21,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/machine_options.json"
+    },
+    {
+      "table": "machine_to_options",
+      "rows": 1,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/machine_to_options.json"
+    },
+    {
+      "table": "machines",
+      "rows": 2,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/machines.json"
+    },
+    {
+      "table": "maintenance_actions",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/maintenance_actions.json"
+    },
+    {
+      "table": "maintenance_requests",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/maintenance_requests.json"
+    },
+    {
+      "table": "material_inputs",
+      "rows": 5,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/material_inputs.json"
+    },
+    {
+      "table": "materials",
+      "rows": 7,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/materials.json"
+    },
+    {
+      "table": "mix_items",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/mix_items.json"
+    },
+    {
+      "table": "mix_machines",
+      "rows": 9,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/mix_machines.json"
+    },
+    {
+      "table": "mix_orders",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/mix_orders.json"
+    },
+    {
+      "table": "mixes",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/mixes.json"
+    },
+    {
+      "table": "orders",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/orders.json"
+    },
+    {
+      "table": "productions",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/productions.json"
+    },
+    {
+      "table": "products",
+      "rows": 110,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/products.json"
+    },
+    {
+      "table": "rolls",
+      "rows": 0,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/rolls.json"
+    },
+    {
+      "table": "salespersons",
+      "rows": 8,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/salespersons.json"
+    },
+    {
+      "table": "session",
+      "rows": 11,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/session.json"
+    },
+    {
+      "table": "users",
+      "rows": 39,
+      "path": "/home/runner/workspace/backups/json-backup-2025-03-21T04-37-32-842Z/users.json"
+    }
+  ],
+  "totalTables": 22,
+  "successfulTables": 22,
+  "failedTables": 0
+}

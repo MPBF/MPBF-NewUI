@@ -1,0 +1,11 @@
+id,pcid,customer_id,category_id,sub_category_id,size_details,thickness,cylinder_inch,cutting_length_cm,raw_material,mast_batch,is_printed,cutting_unit,unit_weight_kg,packing,punching,cover,notes,pcs_pack_roll_qty
+14599,Empty-1-6-1740542713158,13,5,11,17+17+50,8,0,90,LLDPE,Clear  MP00000,false,Packet,1.40,10P/Bag,None,Plain,,0
+14600,Empty-1-7-1740542713404,13,5,12,15+15+60,9,0,110,Regrind,Black  EP82001,false,Packet,1.40,50Pcs/P x 5P/Bag,None,Plain,34G/Pc. - 41Pcs./Packet,0
+14601,Empty-1-9-1740542713639,13,5,14,18+18+60,11,0,110,Regrind,Black  EP82001,false,Packet,2.40,5P/Bag,None,Plain,,0
+14602,Empty-1-10-1740542713873,13,5,15,25+25+70,12,0,130,Regrind,Black  EP82001,false,Packet,3.00,5P/Bag,None,Plain,,0
+14603,Empty-1-6-1740542714109,13,5,11,17+17+50,10,0,100,Regrind,Black  EP82001,false,Packet,1.60,10P/Bag,None,Plain,,0
+14604,Empty-1-6-1740542714350,13,5,11,18+18+50,8,0,105,Regrind,Black  EP82001,false,Packet,1.60,10P/Bag,None,Plain,,0
+14605,Empty-2-13-1740542714584,13,6,18,12+12+32,11,0,60,HDPE,White  EP11105W,false,Box,5.00,20K/Bag,None,Plain,,0
+14606,Empty-2-13-1740542714818,13,6,18,12+12+30,5,0,65,HDPE,Dark Blue  EP41323,false,Box,4.00,30Pcs/R x 10R/Box,None,Plain,,0
+14607,Empty-3-22-1740542715052,13,7,27,14+14+46,17,0,86,HDPE,Sample  00000,false,Kg.,1.00,20K/Bag,None,Plain,,0
+14608,B-61-8-44-1740542715286,450,12,49,61,10,22,55,LLDPE,Clear  MP00000,true,Kg.,1.00,20K/Bag,None,Plain,,0

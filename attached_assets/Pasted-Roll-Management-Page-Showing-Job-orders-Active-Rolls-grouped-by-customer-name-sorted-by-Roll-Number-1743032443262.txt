@@ -1,0 +1,33 @@
+Roll Management Page: Showing Job orders Active Rolls grouped by customer name sorted by Roll Number.
+
+Roll Management Workflow: 
+1-	The workflow starts with extruding Job Orders weight Kgs into rolls until completion of the weight Kgs and no problem if exceed or less than job order weight Kgs.
+2-	The second stage is printing all the Extruded Rolls with same weight Kgs and numbers of extrusion rolls and can’t exceed or be less than extruded roll weight Kgs and numbers.
+3-	The third Stage is to Cut those printed rolls into smaller Packages until finish all printed rolls quantities, and it can’t exceed the weight Kgs or numbers of printed rolls, but it can be less.
+Functions and forms:
+1.	Extrude Roll: the user of this function is only extruder section; by selecting job order from dropdown list, the dropdown list must show all job orders that have status “For Production” grouped by customer name.
+2.	Printing Roll: the user of this stage is printing section they can print only the extruded rolls they can’t extrude new rolls.
+3.	Cut: the user of this function is only cutting section.
+Stage and Status of Rolls: there are only two statues for Rolls as follows.
+1)	After Extruding the Roll, the status will automatically create “For Printing”.
+2)	After Printing the roll will automatically change the status “For Cutting”.
+Notes:
+1-	The roll keeps passing through stages and recording quantity of each stage, so each roll has (extruding quantity, printing quantity and cutting quantity.
+2-	For each job order roll have different continues serial number started from 1 and ending by last extruded roll.
+3-	The system records automatically usernames, date, Rolls id, serials, status. for each roll so user only can input quantity. And print labels.
+4-	Admin users have the privilege of all section’s users.
+5-	The label size is 10X10 cm have stage details (Stage, status, Job order No, Customer Name, Size, Weigh, User name, and QR code contains previous details.
+End of roll management Page
+
+
+New Page Named” Receiving Orders “
+On this page warehouse users can see lists for all the catted quantities of job orders as totals and start receiving them by using receiving form.
+Receiving form: have date and username and id and all received job orders with received quantity. With print function for the form a4 size.
+
+
+New Page Named “Waste Monitoring”
+Waste calculation: for each job order the difference between total extruded quantities and total cutting quantities considered as waste quantities and calculated automatically when cutting quantities inputs.
+
+The waste page shows the job order main details and total extruded quantity and total cutting quantity and total waste. Also waste percentage. 
+
+Add to report page reports about daily and monthly waste grouped by users, sections.

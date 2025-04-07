@@ -1,0 +1,772 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "name": "5GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "1"
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "name": "8GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "2"
+  },
+  {
+    "id": 3,
+    "category_id": 1,
+    "name": "10GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "3"
+  },
+  {
+    "id": 4,
+    "category_id": 1,
+    "name": "20GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "4"
+  },
+  {
+    "id": 5,
+    "category_id": 1,
+    "name": "30GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "5"
+  },
+  {
+    "id": 6,
+    "category_id": 1,
+    "name": "50GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "6"
+  },
+  {
+    "id": 7,
+    "category_id": 1,
+    "name": "55GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "7"
+  },
+  {
+    "id": 8,
+    "category_id": 1,
+    "name": "60GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "8"
+  },
+  {
+    "id": 9,
+    "category_id": 1,
+    "name": "70GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "9"
+  },
+  {
+    "id": 10,
+    "category_id": 1,
+    "name": "80GP",
+    "size_caption": "Packet Trash Bag",
+    "product_identification": "10"
+  },
+  {
+    "id": 11,
+    "category_id": 2,
+    "name": "5GR",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "11"
+  },
+  {
+    "id": 12,
+    "category_id": 2,
+    "name": "8GR",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "12"
+  },
+  {
+    "id": 13,
+    "category_id": 2,
+    "name": "10GR",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "13"
+  },
+  {
+    "id": 14,
+    "category_id": 2,
+    "name": "20GR",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "14"
+  },
+  {
+    "id": 15,
+    "category_id": 2,
+    "name": "30GR",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "15"
+  },
+  {
+    "id": 16,
+    "category_id": 2,
+    "name": "50GR",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "16"
+  },
+  {
+    "id": 17,
+    "category_id": 2,
+    "name": "55GR",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "17"
+  },
+  {
+    "id": 18,
+    "category_id": 3,
+    "name": "SS-TSB",
+    "size_caption": "T-Shirt Bag",
+    "product_identification": "18"
+  },
+  {
+    "id": 19,
+    "category_id": 3,
+    "name": "S-TSB",
+    "size_caption": "T-Shirt Bag",
+    "product_identification": "19"
+  },
+  {
+    "id": 20,
+    "category_id": 3,
+    "name": "M-TSB",
+    "size_caption": "T-Shirt Bag",
+    "product_identification": "20"
+  },
+  {
+    "id": 21,
+    "category_id": 3,
+    "name": "L-TSB",
+    "size_caption": "T-Shirt Bag",
+    "product_identification": "21"
+  },
+  {
+    "id": 22,
+    "category_id": 3,
+    "name": "XL-TSB",
+    "size_caption": "T-Shirt Bag",
+    "product_identification": "22"
+  },
+  {
+    "id": 23,
+    "category_id": 3,
+    "name": "XXL-TSB",
+    "size_caption": "T-Shirt Bag",
+    "product_identification": "23"
+  },
+  {
+    "id": 24,
+    "category_id": 3,
+    "name": "XXXL-TSB",
+    "size_caption": "T-Shirt Bag",
+    "product_identification": "24"
+  },
+  {
+    "id": 25,
+    "category_id": 4,
+    "name": "SSS-CB",
+    "size_caption": "Calendar Bag",
+    "product_identification": "25"
+  },
+  {
+    "id": 26,
+    "category_id": 4,
+    "name": "SS-CB",
+    "size_caption": "Calendar Bag",
+    "product_identification": "26"
+  },
+  {
+    "id": 27,
+    "category_id": 4,
+    "name": "S-CB",
+    "size_caption": "Calendar Bag",
+    "product_identification": "27"
+  },
+  {
+    "id": 28,
+    "category_id": 4,
+    "name": "M-CB",
+    "size_caption": "Calendar Bag",
+    "product_identification": "28"
+  },
+  {
+    "id": 29,
+    "category_id": 4,
+    "name": "L-CB",
+    "size_caption": "Calendar Bag",
+    "product_identification": "29"
+  },
+  {
+    "id": 30,
+    "category_id": 4,
+    "name": "XL-CB",
+    "size_caption": "Calendar Bag",
+    "product_identification": "30"
+  },
+  {
+    "id": 31,
+    "category_id": 4,
+    "name": "XXL-CB",
+    "size_caption": "Calendar Bag",
+    "product_identification": "31"
+  },
+  {
+    "id": 32,
+    "category_id": 4,
+    "name": "XXXL-CB",
+    "size_caption": "Calendar Bag",
+    "product_identification": "32"
+  },
+  {
+    "id": 33,
+    "category_id": 5,
+    "name": "4M-FTC",
+    "size_caption": "Folded Table Cover",
+    "product_identification": "33"
+  },
+  {
+    "id": 34,
+    "category_id": 5,
+    "name": "6M-FTC",
+    "size_caption": "Folded Table Cover",
+    "product_identification": "34"
+  },
+  {
+    "id": 35,
+    "category_id": 5,
+    "name": "Samp-FTC",
+    "size_caption": "Folded Table Cover",
+    "product_identification": "35"
+  },
+  {
+    "id": 36,
+    "category_id": 6,
+    "name": "50CM-NFTC",
+    "size_caption": "Non-Folded Table Cover",
+    "product_identification": "36"
+  },
+  {
+    "id": 37,
+    "category_id": 6,
+    "name": "55CM-NFTC",
+    "size_caption": "Non-Folded Table Cover",
+    "product_identification": "37"
+  },
+  {
+    "id": 38,
+    "category_id": 6,
+    "name": "60CM-NFTC",
+    "size_caption": "Non-Folded Table Cover",
+    "product_identification": "38"
+  },
+  {
+    "id": 39,
+    "category_id": 6,
+    "name": "Samp-NFTC",
+    "size_caption": "Non-Folded Table Cover",
+    "product_identification": "39"
+  },
+  {
+    "id": 40,
+    "category_id": 7,
+    "name": "#6 NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "40"
+  },
+  {
+    "id": 41,
+    "category_id": 7,
+    "name": "#8 NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "41"
+  },
+  {
+    "id": 42,
+    "category_id": 7,
+    "name": "#10NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "42"
+  },
+  {
+    "id": 43,
+    "category_id": 7,
+    "name": "#12NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "43"
+  },
+  {
+    "id": 44,
+    "category_id": 8,
+    "name": "Nyl#1",
+    "size_caption": "Nylon Bag",
+    "product_identification": "44"
+  },
+  {
+    "id": 45,
+    "category_id": 9,
+    "name": "LD#1",
+    "size_caption": "LD Bag",
+    "product_identification": "45"
+  },
+  {
+    "id": 46,
+    "category_id": 10,
+    "name": "HD#1",
+    "size_caption": "HD Bag",
+    "product_identification": "46"
+  },
+  {
+    "id": 47,
+    "category_id": 11,
+    "name": "30L-FB",
+    "size_caption": "Fertilizer Bag",
+    "product_identification": "47"
+  },
+  {
+    "id": 48,
+    "category_id": 11,
+    "name": "50L-FB",
+    "size_caption": "Fertilizer Bag",
+    "product_identification": "48"
+  },
+  {
+    "id": 49,
+    "category_id": 12,
+    "name": "1K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "49"
+  },
+  {
+    "id": 50,
+    "category_id": 12,
+    "name": "1.5K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "50"
+  },
+  {
+    "id": 51,
+    "category_id": 12,
+    "name": "2K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "51"
+  },
+  {
+    "id": 52,
+    "category_id": 12,
+    "name": "4K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "52"
+  },
+  {
+    "id": 53,
+    "category_id": 2,
+    "name": "70GR",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "53"
+  },
+  {
+    "id": 54,
+    "category_id": 7,
+    "name": "#14NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "54"
+  },
+  {
+    "id": 55,
+    "category_id": 7,
+    "name": "#16NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "55"
+  },
+  {
+    "id": 56,
+    "category_id": 8,
+    "name": "Nyl#2",
+    "size_caption": "Nylon Bag",
+    "product_identification": "56"
+  },
+  {
+    "id": 57,
+    "category_id": 8,
+    "name": "Nyl#3",
+    "size_caption": "Nylon Bag",
+    "product_identification": "57"
+  },
+  {
+    "id": 58,
+    "category_id": 8,
+    "name": "Nyl#4",
+    "size_caption": "Nylon Bag",
+    "product_identification": "58"
+  },
+  {
+    "id": 59,
+    "category_id": 8,
+    "name": "Nyl#5",
+    "size_caption": "Nylon Bag",
+    "product_identification": "59"
+  },
+  {
+    "id": 60,
+    "category_id": 12,
+    "name": "3K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "60"
+  },
+  {
+    "id": 61,
+    "category_id": 12,
+    "name": "6K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "61"
+  },
+  {
+    "id": 62,
+    "category_id": 10,
+    "name": "HD#2",
+    "size_caption": "HD Bag",
+    "product_identification": "62"
+  },
+  {
+    "id": 63,
+    "category_id": 10,
+    "name": "HD#3",
+    "size_caption": "HD Bag",
+    "product_identification": "63"
+  },
+  {
+    "id": 64,
+    "category_id": 7,
+    "name": "#18NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "64"
+  },
+  {
+    "id": 65,
+    "category_id": 7,
+    "name": "#20NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "65"
+  },
+  {
+    "id": 66,
+    "category_id": 7,
+    "name": "#24NylFact",
+    "size_caption": "Nylon Factory",
+    "product_identification": "66"
+  },
+  {
+    "id": 67,
+    "category_id": 8,
+    "name": "Nyl#6",
+    "size_caption": "Nylon Bag",
+    "product_identification": "67"
+  },
+  {
+    "id": 68,
+    "category_id": 12,
+    "name": "9K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "68"
+  },
+  {
+    "id": 69,
+    "category_id": 12,
+    "name": "5.5K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "69"
+  },
+  {
+    "id": 70,
+    "category_id": 12,
+    "name": "5K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "70"
+  },
+  {
+    "id": 71,
+    "category_id": 8,
+    "name": "Nyl#7",
+    "size_caption": "Nylon Bag",
+    "product_identification": "71"
+  },
+  {
+    "id": 72,
+    "category_id": 8,
+    "name": "Nyl#8",
+    "size_caption": "Nylon Bag",
+    "product_identification": "72"
+  },
+  {
+    "id": 73,
+    "category_id": 12,
+    "name": "20K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "73"
+  },
+  {
+    "id": 74,
+    "category_id": 8,
+    "name": "Nyl#9",
+    "size_caption": "Nylon Bag",
+    "product_identification": "74"
+  },
+  {
+    "id": 75,
+    "category_id": 9,
+    "name": "LD#2",
+    "size_caption": "LD Bag",
+    "product_identification": "75"
+  },
+  {
+    "id": 76,
+    "category_id": 9,
+    "name": "LD#3",
+    "size_caption": "LD Bag",
+    "product_identification": "76"
+  },
+  {
+    "id": 77,
+    "category_id": 10,
+    "name": "HD#4",
+    "size_caption": "HD Bag",
+    "product_identification": "77"
+  },
+  {
+    "id": 78,
+    "category_id": 11,
+    "name": "60L-FB",
+    "size_caption": "Fertilizer Bag",
+    "product_identification": "78"
+  },
+  {
+    "id": 79,
+    "category_id": 8,
+    "name": "No.5 - 10Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "79"
+  },
+  {
+    "id": 80,
+    "category_id": 9,
+    "name": "LD#4",
+    "size_caption": "LD Bag",
+    "product_identification": "80"
+  },
+  {
+    "id": 81,
+    "category_id": 8,
+    "name": "No.10 - 10Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "81"
+  },
+  {
+    "id": 82,
+    "category_id": 8,
+    "name": "No.20 - 10Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "82"
+  },
+  {
+    "id": 83,
+    "category_id": 2,
+    "name": "100GP",
+    "size_caption": "Roll Trash Bag",
+    "product_identification": "83"
+  },
+  {
+    "id": 84,
+    "category_id": 10,
+    "name": "cover",
+    "size_caption": "HD Bag",
+    "product_identification": "84"
+  },
+  {
+    "id": 85,
+    "category_id": 8,
+    "name": "No.1 - 5Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "85"
+  },
+  {
+    "id": 86,
+    "category_id": 8,
+    "name": "No.2 - 5Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "86"
+  },
+  {
+    "id": 87,
+    "category_id": 8,
+    "name": "No.3 - 5Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "87"
+  },
+  {
+    "id": 88,
+    "category_id": 10,
+    "name": "HD#5",
+    "size_caption": "HD Bag",
+    "product_identification": "88"
+  },
+  {
+    "id": 89,
+    "category_id": 8,
+    "name": "No.5 - 5Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "89"
+  },
+  {
+    "id": 90,
+    "category_id": 8,
+    "name": "No.4 - 5Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "90"
+  },
+  {
+    "id": 91,
+    "category_id": 12,
+    "name": "5K - FB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "91"
+  },
+  {
+    "id": 92,
+    "category_id": 12,
+    "name": "10K - FB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "92"
+  },
+  {
+    "id": 93,
+    "category_id": 8,
+    "name": "No.40 - 30-10Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "93"
+  },
+  {
+    "id": 94,
+    "category_id": 9,
+    "name": "LD#5",
+    "size_caption": "LD Bag",
+    "product_identification": "94"
+  },
+  {
+    "id": 95,
+    "category_id": 8,
+    "name": "No.3 - 10Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "95"
+  },
+  {
+    "id": 96,
+    "category_id": 8,
+    "name": "No.4 - 10Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "96"
+  },
+  {
+    "id": 97,
+    "category_id": 12,
+    "name": ".7K-CHB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "97"
+  },
+  {
+    "id": 98,
+    "category_id": 12,
+    "name": "1.2K-CB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "98"
+  },
+  {
+    "id": 99,
+    "category_id": 12,
+    "name": "2.8K-CB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "99"
+  },
+  {
+    "id": 100,
+    "category_id": 12,
+    "name": "1.250K-CB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "100"
+  },
+  {
+    "id": 101,
+    "category_id": 8,
+    "name": "No.1&2-10Kg",
+    "size_caption": "Nylon Bag",
+    "product_identification": "101"
+  },
+  {
+    "id": 102,
+    "category_id": 12,
+    "name": "2.750K-CB",
+    "size_caption": "Charcoal Bag",
+    "product_identification": "102"
+  },
+  {
+    "id": 103,
+    "category_id": 10,
+    "name": "1MM",
+    "size_caption": "HD Bag",
+    "product_identification": "103"
+  },
+  {
+    "id": 104,
+    "category_id": 10,
+    "name": "1.5MM",
+    "size_caption": "HD Bag",
+    "product_identification": "104"
+  },
+  {
+    "id": 105,
+    "category_id": 10,
+    "name": "2MM",
+    "size_caption": "HD Bag",
+    "product_identification": "105"
+  },
+  {
+    "id": 106,
+    "category_id": 14,
+    "name": "Rub-FTC",
+    "size_caption": "Rubber TC",
+    "product_identification": "106"
+  },
+  {
+    "id": 107,
+    "category_id": 14,
+    "name": "Rub-NFTC",
+    "size_caption": "Rubber TC",
+    "product_identification": "107"
+  },
+  {
+    "id": 108,
+    "category_id": 10,
+    "name": "C100",
+    "size_caption": "HD Bag",
+    "product_identification": "108"
+  },
+  {
+    "id": 109,
+    "category_id": 10,
+    "name": "W100",
+    "size_caption": "HD Bag",
+    "product_identification": "109"
+  },
+  {
+    "id": 110,
+    "category_id": 17,
+    "name": "UC",
+    "size_caption": "Uncategory",
+    "product_identification": "110"
+  }
+]

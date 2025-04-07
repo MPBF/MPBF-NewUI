@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "name": "Packet Trash Bag",
+    "category_identification": "PTB"
+  },
+  {
+    "id": 2,
+    "name": "Roll Trash Bag",
+    "category_identification": "RTB"
+  },
+  {
+    "id": 3,
+    "name": "T-Shirt Bag",
+    "category_identification": "TSB"
+  },
+  {
+    "id": 4,
+    "name": "Calendar Bag",
+    "category_identification": "CB"
+  },
+  {
+    "id": 5,
+    "name": "Folded Table Cover",
+    "category_identification": "FTC"
+  },
+  {
+    "id": 6,
+    "name": "Non-Folded Table Cover",
+    "category_identification": "N-FTC"
+  },
+  {
+    "id": 7,
+    "name": "Nylon Factory",
+    "category_identification": "Nyl-Fact"
+  },
+  {
+    "id": 8,
+    "name": "Nylon Bag",
+    "category_identification": "SampNyl"
+  },
+  {
+    "id": 9,
+    "name": "LD Bag",
+    "category_identification": "LD Samp"
+  },
+  {
+    "id": 10,
+    "name": "HD Bag",
+    "category_identification": "HD Samp"
+  },
+  {
+    "id": 11,
+    "name": "Fertilizer Bag",
+    "category_identification": "FB"
+  },
+  {
+    "id": 12,
+    "name": "Charcoal Bag",
+    "category_identification": "CHB"
+  },
+  {
+    "id": 13,
+    "name": "Bakery Bag and Cover",
+    "category_identification": "BBC"
+  },
+  {
+    "id": 14,
+    "name": "Rubber TC",
+    "category_identification": "RTC"
+  },
+  {
+    "id": 15,
+    "name": "Tile Clips",
+    "category_identification": "TC"
+  },
+  {
+    "id": 16,
+    "name": "Tile Wedges",
+    "category_identification": "TW"
+  },
+  {
+    "id": 17,
+    "name": "Uncategory",
+    "category_identification": "UC"
+  }
+]

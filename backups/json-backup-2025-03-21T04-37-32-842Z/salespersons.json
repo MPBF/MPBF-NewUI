@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Office",
+    "phone": "0550609050",
+    "salesperson_identification": "1"
+  },
+  {
+    "id": 2,
+    "name": "Tanveer Ahmad",
+    "phone": "0550609050",
+    "salesperson_identification": "2"
+  },
+  {
+    "id": 5,
+    "name": "Bassam",
+    "phone": "0550609050",
+    "salesperson_identification": "5"
+  },
+  {
+    "id": 6,
+    "name": "Abdullah",
+    "phone": "0550609050",
+    "salesperson_identification": "6"
+  },
+  {
+    "id": 8,
+    "name": "Nabel",
+    "phone": "0550609050",
+    "salesperson_identification": "8"
+  },
+  {
+    "id": 3,
+    "name": "Abdul Salam",
+    "phone": "0550609050",
+    "salesperson_identification": "3"
+  },
+  {
+    "id": 4,
+    "name": "Divakaran Chelath",
+    "phone": "0550609050",
+    "salesperson_identification": "4"
+  },
+  {
+    "id": 7,
+    "name": "Eyhab",
+    "phone": "0550609050",
+    "salesperson_identification": "7"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 3,
+    "identification": "EXT-Ex-B-415799",
+    "section": "Extruder",
+    "code": "Ex-B",
+    "production_date": "2025-03-06T11:43:12.955Z",
+    "serial_number": "00000000000",
+    "manufacturer_code": "",
+    "manufacturer_name": "DIING KUNGE"
+  },
+  {
+    "id": 2,
+    "identification": "EXT-Ex-A-515038",
+    "section": "Extruder",
+    "code": "Ex-A",
+    "production_date": "2025-03-03T22:55:33.352Z",
+    "serial_number": "00000000000",
+    "manufacturer_code": "TK-0001",
+    "manufacturer_name": "DIING KUNGE"
+  }
+]
