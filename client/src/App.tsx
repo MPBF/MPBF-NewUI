@@ -35,6 +35,7 @@ import ReportsList from "./pages/reports/ReportsList";
 import UsersList from "./pages/settings/UsersList";
 import UserForm from "./pages/settings/UserForm";
 import SmsNotifications from "./pages/settings/SmsNotifications";
+import SettingsDashboard from "./pages/settings/SettingsDashboard";
 import ItemForm from "./pages/customers/ItemForm";
 import MachineList from "./pages/machines/MachineList";
 import MachineForm from "./pages/machines/MachineForm";
@@ -58,6 +59,8 @@ import { useState, useEffect } from "react";
 import { AuthProvider, useAuth } from "./utils/auth";
 import { LanguageProvider } from "./utils/language"; 
 import { PermissionsProvider, RestrictedRoute } from "./utils/permissions";
+import { SearchProvider } from "./utils/search-context";
+import { SearchDialog } from "./components/ui/search";
 
 function Router() {
   // Use auth context
@@ -309,6 +312,11 @@ function Router() {
             <SmsNotifications />
           </RestrictedRoute>
         </Route>
+        <Route path="/settings">
+          <RestrictedRoute role="admin">
+            <SettingsDashboard />
+          </RestrictedRoute>
+        </Route>
         
         {/* Machine Management routes - Admin only */}
         <Route path="/machines/new">
@@ -434,10 +442,13 @@ function App() {
       <AuthProvider>
         <LanguageProvider>
           <PermissionsProvider>
-            <ErrorBoundary>
-              <Router />
-              <Toaster />
-            </ErrorBoundary>
+            <SearchProvider>
+              <ErrorBoundary>
+                <Router />
+                <SearchDialog />
+                <Toaster />
+              </ErrorBoundary>
+            </SearchProvider>
           </PermissionsProvider>
         </LanguageProvider>
       </AuthProvider>

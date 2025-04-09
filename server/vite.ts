@@ -26,7 +26,7 @@ export async function setupVite(app: Express, server: Server) {
   const serverOptions = {
     middlewareMode: true,
     hmr: { server },
-    //allowedHosts: true,
+    allowedHosts: true,
   };
 
   const vite = await createViteServer({
@@ -85,8 +85,4 @@ export function serveStatic(app: Express) {
   app.use("*", (_req, res) => {
     res.sendFile(path.resolve(distPath, "index.html"));
   });
-}
-export function setupExpress(app: Express) {
-  app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
 }

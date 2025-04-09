@@ -1,0 +1,199 @@
+Suppressed unhandled rejection from WebSocket.
+overrideMethod @ hook.js:608Understand this warning
+        
+          
+      
+        
+        
+          
+            DevTools has encountered an error
+          
+          
+        
+        
+          
+                
+          
+          
+          
+        
+        
+      
+    
+          
+        
+          Something went wrong. Try again.
+        
+          
+          
+            
+      AI tools may generate inaccurate info that doesn't represent Google's views.
+      Data sent to Google may be seen by human reviewers to improve this feature.
+      Open settings
+      or
+      learn more
+    
+          
+        
+        
+      
+vite-hmr-patch.ts:44 Vite HMR WebSocket patch installed
+main.tsx:52 Rendering application to root element: <div id=​"root">​…​</div>​
+auth.tsx:62 [AuthProvider] Checking auth status
+auth.tsx:65 [AuthProvider] Token found, attempting to validate
+auth.tsx:79 [AuthProvider] Trying to validate token with URL: /api/user
+auth.tsx:88 [AuthProvider] Auth status response for /api/user: 200
+auth.tsx:93 [AuthProvider] User data retrieved via /api/user: Object
+ProductionDashboard.tsx:368 Attempting WebSocket connection to: wss://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/ws
+ProductionDashboard.tsx:369 Host: cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev Protocol: wss: Is Replit: true
+ProductionDashboard.tsx:383 WebSocket connected successfully
+hook.js:608 Warning: React has detected a change in the order of Hooks called by ProductionDashboard. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://reactjs.org/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useState                   useState
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. useEffect                  useEffect
+9. useEffect                  useEffect
+10. useContext                useContext
+11. useContext                useContext
+12. useContext                useContext
+13. useContext                useContext
+14. useContext                useContext
+15. undefined                 useContext
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Error Component Stack
+    at ProductionDashboard (ProductionDashboard.tsx:309:27)
+    at RestrictedRoute (permissions.tsx:96:3)
+    at Route (wouter.js?v=b67393e5:323:16)
+    at Switch (wouter.js?v=b67393e5:379:17)
+    at div (<anonymous>)
+    at MotionComponent (framer-motion.js?v=b67393e5:6536:40)
+    at PresenceChild (framer-motion.js?v=b67393e5:7742:24)
+    at AnimatePresence (framer-motion.js?v=b67393e5:7800:26)
+    at main (<anonymous>)
+    at div (<anonymous>)
+    at div (<anonymous>)
+    at MainLayout (MainLayout.tsx:41:38)
+    at Router (App.tsx:67:42)
+    at ErrorBoundaryClass (error-boundary.tsx:26:5)
+    at ErrorBoundary (error-boundary.tsx:150:21)
+    at SearchProvider (search-context.tsx:47:34)
+    at PermissionsProvider (permissions.tsx:27:75)
+    at LanguageProvider (language.tsx:27:69)
+    at AuthProvider (auth.tsx:52:61)
+    at QueryClientProvider (@tanstack_react-query.js?v=b67393e5:2805:3)
+    at App (<anonymous>)
+overrideMethod @ hook.js:608Understand this error
+        
+          
+      
+        
+        
+          
+            DevTools has encountered an error
+          
+          
+        
+        
+          
+                
+          
+          
+          
+        
+        
+      
+    
+          
+        
+          Something went wrong. Try again.
+        
+          
+          
+            
+      AI tools may generate inaccurate info that doesn't represent Google's views.
+      Data sent to Google may be seen by human reviewers to improve this feature.
+      Open settings
+      or
+      learn more
+    
+          
+        
+        
+      
+VM730:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM731:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM816:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM817:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM822:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM823:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM824:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM825:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM826:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM827:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM828:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)
+_storageChangeDispatcher @ content.js:2
+_storageChangeDispatcherCallback @ content.js:2Understand this error
+VM829:1 Uncaught (in promise) SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at l._storageChangeDispatcher (content.js:2:898238)
+    at _storageChangeDispatcherCallback (content.js:2:897686)

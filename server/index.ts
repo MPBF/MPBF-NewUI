@@ -83,9 +83,9 @@ app.use((req, res, next) => {
       log(`Running in ${process.env.NODE_ENV || 'production'} mode`);
     }
 
-    // Use environment variable PORT if available, fallback to 5000
-    // This ensures compatibility with various hosting environments
-    const port = Number(process.env.PORT) || 5000;
+    // Use environment variable PORT if available, fallback to 5003
+    // This ensures compatibility with various hosting environments 
+    const port = parseInt(process.env.PORT || '5003', 10);
     server.listen(port, '0.0.0.0', () => {
       log(`Server successfully started and serving on port ${port} (0.0.0.0)`);
     });
@@ -112,7 +112,7 @@ app.use((req, res, next) => {
       });
     });
 
-    const port = Number(process.env.PORT) || 3000;
+    const port = parseInt(process.env.PORT || '5003', 10);
     app.listen(port, '0.0.0.0', () => {
       log(`Error recovery server listening on port ${port} (0.0.0.0)`);
     });

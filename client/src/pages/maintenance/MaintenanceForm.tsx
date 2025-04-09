@@ -369,9 +369,7 @@ export default function MaintenanceForm({ id }: MaintenanceFormProps) {
                                 : null}
                             </SelectContent>
                           </Select>
-                          <FormDescription>
-                            Select the machine that needs maintenance
-                          </FormDescription>
+
                           <FormMessage />
                         </FormItem>
                       )}
@@ -399,9 +397,7 @@ export default function MaintenanceForm({ id }: MaintenanceFormProps) {
                             <SelectItem value="Fixed">Fixed</SelectItem>
                           </SelectContent>
                         </Select>
-                        <FormDescription>
-                          Current status of the maintenance request
-                        </FormDescription>
+
                         <FormMessage />
                       </FormItem>
                     )}
@@ -420,9 +416,7 @@ export default function MaintenanceForm({ id }: MaintenanceFormProps) {
                             rows={3}
                           />
                         </FormControl>
-                        <FormDescription>
-                          Provide a detailed description of the issue
-                        </FormDescription>
+
                         <FormMessage />
                       </FormItem>
                     )}
@@ -441,9 +435,7 @@ export default function MaintenanceForm({ id }: MaintenanceFormProps) {
                             rows={2}
                           />
                         </FormControl>
-                        <FormDescription>
-                          Any additional notes or comments
-                        </FormDescription>
+
                         <FormMessage />
                       </FormItem>
                     )}
@@ -488,9 +480,6 @@ export default function MaintenanceForm({ id }: MaintenanceFormProps) {
               <CardHeader className="flex flex-row items-center justify-between">
                 <div>
                   <CardTitle>Maintenance Actions</CardTitle>
-                  <CardDescription>
-                    List of actions taken for this maintenance request
-                  </CardDescription>
                 </div>
                 <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                   <DialogTrigger asChild>
@@ -503,9 +492,6 @@ export default function MaintenanceForm({ id }: MaintenanceFormProps) {
                   <DialogContent>
                     <DialogHeader>
                       <DialogTitle>Add Maintenance Action</DialogTitle>
-                      <DialogDescription>
-                        Record a new action taken for this maintenance request
-                      </DialogDescription>
                     </DialogHeader>
                     <Form {...actionForm}>
                       <form onSubmit={actionForm.handleSubmit(onSubmitAction)} className="space-y-4">

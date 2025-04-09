@@ -42,3 +42,12 @@ externalPort = 80
 
 [env]
 PORT = "5000"
+
+[rules]
+
+[rules.formatter]
+
+[rules.formatter.fileExtensions]
+
+[rules.formatter.fileExtensions.".tsx"]
+id = "module:nodejs-20/formatter:prettier"

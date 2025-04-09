@@ -145,7 +145,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         JWT_SECRET: process.env.JWT_SECRET ? "Set" : "Not set",
         DATABASE_URL: process.env.DATABASE_URL ? "Set" : "Not set",
         NODE_ENV: process.env.NODE_ENV || "Not set",
-        PORT: process.env.PORT || "Using default (5000)"
+        PORT: process.env.PORT || "Using default (5003)"
       };
       
       // System resources

@@ -1,0 +1,17 @@
+
+DOMException {}
+stack: "SyntaxError: Failed to construct 'WebSocket': The URL 'wss://localhost:undefined/?token=Tfdttq0BVWrs' is invalid.↵ at new t (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:218737)↵ at setupWebSocket (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/@vite/client:536:19)↵ at fallback (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/@vite/client:509:16)↵ at WebSocket.<anonymous> (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/@vite/client:555:7)"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: DOMException
+
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at SearchDialog (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/src/components/ui/search/search-dialog.tsx:334:83)
+    at ErrorBoundaryClass (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/src/components/ui/error-boundary.tsx:27:5)
+    at ErrorBoundary (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/src/components/ui/error-boundary.tsx:152:21)
+    at SearchProvider (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/src/utils/search-context.tsx:41:34)
+    at PermissionsProvider (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/src/utils/permissions.tsx:29:39)
+    at LanguageProvider (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/src/utils/language.tsx:28:36)
+    at AuthProvider (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/src/utils/auth.tsx:39:32)
+    at QueryClientProvider (https://cf9a7a9c-44bc-4694-a952-51168d797b2e-00-3k37l3z8w9rvl.sisko.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=b67393e5:2805:3)
+    at App

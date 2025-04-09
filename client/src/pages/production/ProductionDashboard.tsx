@@ -313,6 +313,7 @@ export default function ProductionDashboard() {
   const [activeTab, setActiveTab] = useState("overview");
   const [refreshing, setRefreshing] = useState(false);
   const { toast } = useToast();
+  const { language, isRtl } = useLanguage(); // Ensure useLanguage is always called
 
   // Initialize WebSocket connection
   useEffect(() => {
@@ -328,8 +329,7 @@ export default function ProductionDashboard() {
         fetch('/api/job-orders').then(res => res.json())
       ])
       .then(([machines, productions, rolls, jobOrders]) => {
-        console.log('Productions:', productions);
-        console.log('Formatted Productions:', productions);
+        console.log('Data loaded via REST API');
         
         setData({
           machines,
@@ -351,21 +351,30 @@ export default function ProductionDashboard() {
       });
     };
     
+    // Connect to WebSocket
+    let webSocket: WebSocket | null = null;
+    let connectionTimeout: NodeJS.Timeout | null = null;
+    
     try {
-      // Handle both development and production environments
-      const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
+      // Use the current window location to determine the appropriate WebSocket URL
       const host = window.location.host;
+      const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
       
-      // Create WebSocket connection
+      // Check if we're in a Replit environment
+      const isReplitEnv = host.includes('replit.app') || host.includes('replit.dev');
+      
+      // Create WebSocket connection - use a special path for Replit environment
       const wsUrl = `${protocol}//${host}/ws`;
-      console.log('Attempting WebSocket connection to:', wsUrl);
       
-      const webSocket = new WebSocket(wsUrl);
+      console.log('Attempting WebSocket connection to:', wsUrl);
+      console.log('Host:', host, 'Protocol:', protocol, 'Is Replit:', isReplitEnv);
+      
+      webSocket = new WebSocket(wsUrl);
       
       // Add a timeout to handle failed connections
-      const connectionTimeout = setTimeout(() => {
-        if (webSocket.readyState !== WebSocket.OPEN) {
-          console.log('WebSocket connection timeout');
+      connectionTimeout = setTimeout(() => {
+        console.log('WebSocket connection timeout');
+        if (webSocket && webSocket.readyState !== WebSocket.OPEN) {
           webSocket.close();
           fetchDataFromRestAPI();
         }
@@ -373,7 +382,7 @@ export default function ProductionDashboard() {
       
       webSocket.onopen = () => {
         console.log('WebSocket connected successfully');
-        clearTimeout(connectionTimeout);
+        if (connectionTimeout) clearTimeout(connectionTimeout);
         setConnected(true);
         setSocket(webSocket);
       };
@@ -402,23 +411,25 @@ export default function ProductionDashboard() {
         console.error('WebSocket error:', error);
         toast({
           title: "Connection Error",
-          description: "Unable to connect to the production data service. Please try again later.",
+          description: "Unable to connect to the production data service. Falling back to REST API.",
           variant: "destructive"
         });
-      };
-      
-      // Clean up function
-      return () => {
-        if (webSocket && webSocket.readyState !== WebSocket.CLOSED) {
-          webSocket.close();
-        }
+        // Fallback to REST API on WebSocket error
+        fetchDataFromRestAPI();
       };
     } catch (error) {
       console.error('Error initializing WebSocket:', error);
       fetchDataFromRestAPI();
-      return () => {}; // Empty cleanup function
     }
-  }, [toast]);
+    
+    // Clean up function
+    return () => {
+      if (connectionTimeout) clearTimeout(connectionTimeout);
+      if (webSocket && webSocket.readyState !== WebSocket.CLOSED) {
+        webSocket.close();
+      }
+    };
+  }, [toast, language, isRtl]);
 
   // Handle refresh button click
   const handleRefresh = () => {

@@ -233,9 +233,6 @@ const DraggableDashboard: React.FC<DraggableDashboardProps> = ({
             <Card className="h-full overflow-hidden border-0 shadow-md rounded-xl">
               <CardHeader className="border-b bg-gradient-to-r from-teal-50 to-white pb-2">
                 <CardTitle className="text-lg font-bold text-teal-800">{widget.title}</CardTitle>
-                {widget.type === 'chart' && (
-                  <CardDescription>Interactive data visualization</CardDescription>
-                )}
               </CardHeader>
               <CardContent className={`p-4 ${widget.type === 'chart' ? 'overflow-hidden' : 'overflow-auto'}`}>
                 {widget.component}

@@ -465,26 +465,32 @@ export default function Dashboard() {
   console.log("Formatted Productions:", formattedProductions);
 
   return (
-    <div>
+    <div className="fade-in">
       {/* Dashboard Header */}
-      <div className="mb-8">
-        <div className="flex justify-between items-center mb-2">
+      <div className="mb-8 card-modern bg-white p-6 shadow-medium">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4, type: "spring", stiffness: 100 }}
+            className="flex-1"
           >
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">{t('dashboard')}</h1>
-            <p className="text-slate-600 mt-1">
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-mpbf-teal to-mpbf-navy bg-clip-text text-transparent tracking-tight">{t('dashboard')}</h1>
+            <p className="text-slate-600 mt-2 flex flex-wrap items-center gap-2">
               {user ? (
-                <span className="flex items-center gap-1">
-                  {t('welcome')}, <span className="font-semibold text-blue-600">{user.name}</span>
-                  <Badge variant="outline" className="ml-2 bg-blue-50 text-blue-700 border-blue-200">
+                <>
+                  <span className="flex items-center gap-1 text-base">
+                    {t('welcome')}, <span className="font-semibold text-mpbf-navy">{user.name}</span>
+                  </span>
+                  <Badge 
+                    variant="outline" 
+                    className="ml-1 border-mpbf-teal text-mpbf-teal bg-mpbf-teal/5 font-medium px-2.5 py-0.5"
+                  >
                     {user.role}
                   </Badge>
-                </span>
+                </>
               ) : (
-                <>{t('systemOverview')}</>
+                <span>{t('systemOverview')}</span>
               )}
             </p>
           </motion.div>
@@ -494,9 +500,7 @@ export default function Dashboard() {
             onClick={toggleLanguage}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className={`px-4 py-2 rounded-full shadow-sm border border-blue-100 
-              ${language === 'arabic' ? 'bg-blue-50 text-blue-700 font-medium' : 'bg-white text-slate-700'} 
-              transition-all duration-200 hover:shadow-md`}
+            className="btn-outline text-sm rounded-full px-4 shadow-soft"
           >
             <span className="flex items-center gap-2">
               <Languages className="h-4 w-4" />
@@ -505,11 +509,11 @@ export default function Dashboard() {
           </motion.button>
         </div>
         
-        <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-blue-300 rounded-full mb-2"></div>
+        <div className="h-1 w-20 bg-gradient-to-r from-mpbf-teal to-mpbf-navy rounded-full mt-4 opacity-80"></div>
       </div>
 
       {/* Stats Cards */}
-      <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 dashboard-grid ${isRtl ? 'rtl-auto-fix' : ''}`}>
+      <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 dashboard-grid ${isRtl ? 'rtl-auto-fix' : ''}`}>
         {stats.map((stat, index) => (
           <motion.div
             key={index}
@@ -518,46 +522,54 @@ export default function Dashboard() {
             transition={{ 
               duration: 0.4, 
               delay: index * 0.1,
-              ease: [0.25, 0.1, 0.25, 1.0] 
+              type: "spring",
+              stiffness: 100
             }}
+            className="fade-slide-in"
           >
-            <StatCard
-              title={t(stat.title.replace(/\s+/g, '') as keyof typeof translations.english)}
-              value={stat.value}
-              icon={stat.icon}
-              iconBgColor={stat.bgColor}
-              shadowColor={stat.shadowColor}
-            />
+            <div className="stat-card group hover:shadow-medium">
+              <div className="flex justify-between items-center">
+                <div className="stat-title">{t(stat.title.replace(/\s+/g, '') as keyof typeof translations.english)}</div>
+                <div className={`p-2 rounded-lg transition-colors ${stat.bgColor} text-white`}>
+                  {stat.icon}
+                </div>
+              </div>
+              <div className="stat-value font-bold text-gray-900">{stat.value}</div>
+              <div className="mt-2 flex items-center gap-1 text-xs text-muted-foreground">
+                <ArrowUpRight className="h-3 w-3 text-green-500" />
+                <span className="text-green-500 font-medium">+12%</span> from last month
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>
       
       {/* Dashboard Tabs */}
       <Tabs defaultValue="overview" className="mb-8" dir={isRtl ? "rtl" : "ltr"}>
-        <TabsList className="grid w-full grid-cols-3 rounded-xl bg-blue-50 p-1 border border-blue-100">
+        <TabsList className="grid w-full grid-cols-3 rounded-xl bg-gray-100/70 p-1 border border-gray-200 shadow-soft">
           <TabsTrigger 
             value="overview" 
-            className="data-[state=active]:bg-white data-[state=active]:text-blue-700 data-[state=active]:shadow-sm"
+            className="data-[state=active]:bg-white data-[state=active]:text-mpbf-teal data-[state=active]:shadow-sm rounded-lg"
           >
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 py-0.5">
               <Gauge className="h-4 w-4" />
               {t('overview')}
             </div>
           </TabsTrigger>
           <TabsTrigger 
             value="production" 
-            className="data-[state=active]:bg-white data-[state=active]:text-blue-700 data-[state=active]:shadow-sm"
+            className="data-[state=active]:bg-white data-[state=active]:text-mpbf-teal data-[state=active]:shadow-sm rounded-lg"
           >
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 py-0.5">
               <Factory className="h-4 w-4" />
               {t('production')}
             </div>
           </TabsTrigger>
           <TabsTrigger 
             value="orders" 
-            className="data-[state=active]:bg-white data-[state=active]:text-blue-700 data-[state=active]:shadow-sm"
+            className="data-[state=active]:bg-white data-[state=active]:text-mpbf-teal data-[state=active]:shadow-sm rounded-lg"
           >
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 py-0.5">
               <ClipboardList className="h-4 w-4" />
               {t('orders')}
             </div>

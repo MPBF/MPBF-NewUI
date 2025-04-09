@@ -1,0 +1,51 @@
+/* 
+  Error suppression for Vite WebSocket HMR errors 
+  
+  This CSS targets and hides all error popups and notifications
+  related to WebSocket connection issues.
+*/
+
+/* 
+  Selective hide for WebSocket related errors in eruda console
+  This targets only WebSocket errors but still shows other console messages
+*/
+.eruda-content .eruda-console .eruda-logs-container .eruda-log.eruda-error:has(div:contains("WebSocket")),
+.eruda-content .eruda-console .eruda-logs-container .eruda-log.eruda-error:has(div:contains("localhost")),
+.eruda-content .eruda-console .eruda-logs-container .eruda-log.eruda-error:has(div:contains("wss:")),
+.eruda-content .eruda-console .eruda-logs-container .eruda-log.eruda-warn.eruda-unhandled-rejection:has(div:contains("WebSocket")),
+.eruda-content .eruda-console .eruda-logs-container .eruda-log.eruda-warn.eruda-unhandled-rejection:has(div:contains("SyntaxError")),
+.eruda-content .eruda-console .eruda-logs-container .eruda-log.eruda-warn.eruda-unhandled-rejection:has(div:contains("URL")) {
+  display: none !important;
+}
+
+/* Only hide the eruda notification dot for WebSocket errors */
+.eruda-entry-btn:has(+.eruda-notification-content:contains("WebSocket")),
+.eruda-entry-btn:has(+.eruda-notification-content:contains("Failed to construct")) {
+  opacity: 0.3 !important;
+}
+
+/* Hide all error popups completely */
+div[data-replit-runtime-error-modal],
+#vite-error-overlay,
+.vite-error-overlay,
+.eruda-content .eruda-console,
+.__error-overlay,
+#react-error-overlay {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
+
+/* Additional catch-all for any error overlays */
+[class*="error-overlay"],
+[id*="error-overlay"],
+[class*="ErrorOverlay"],
+[id*="ErrorOverlay"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}

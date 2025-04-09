@@ -431,7 +431,7 @@ export default function WasteMonitoring() {
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-lg">Production Overview</CardTitle>
-              <CardDescription>Summary of production and waste</CardDescription>
+
             </CardHeader>
             <CardContent>
               <dl className="grid grid-cols-2 gap-4 text-sm">
@@ -460,7 +460,7 @@ export default function WasteMonitoring() {
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-lg">Highest Waste</CardTitle>
-              <CardDescription>Highest waste percentage recorded</CardDescription>
+
             </CardHeader>
             <CardContent>
               <div className="flex items-center justify-between">
@@ -487,7 +487,7 @@ export default function WasteMonitoring() {
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-lg">Lowest Waste</CardTitle>
-              <CardDescription>Lowest waste percentage recorded</CardDescription>
+
             </CardHeader>
             <CardContent>
               <div className="flex items-center justify-between">
@@ -537,9 +537,7 @@ export default function WasteMonitoring() {
             <Card>
               <CardHeader>
                 <CardTitle>Waste Over Time</CardTitle>
-                <CardDescription>
-                  Total waste in kg over the selected period
-                </CardDescription>
+
               </CardHeader>
               <CardContent className="pt-0">
                 <div className="h-[300px]">
@@ -570,9 +568,7 @@ export default function WasteMonitoring() {
             <Card>
               <CardHeader>
                 <CardTitle>Waste by Customer</CardTitle>
-                <CardDescription>
-                  Distribution of waste across different customers
-                </CardDescription>
+
               </CardHeader>
               <CardContent className="pt-0">
                 <div className="h-[300px]">
@@ -606,9 +602,7 @@ export default function WasteMonitoring() {
           <Card>
             <CardHeader>
               <CardTitle>Waste by User</CardTitle>
-              <CardDescription>
-                Comparison of waste production by different users
-              </CardDescription>
+
             </CardHeader>
             <CardContent className="pt-0">
               <div className="h-[400px]">
@@ -641,9 +635,7 @@ export default function WasteMonitoring() {
           <Card>
             <CardHeader>
               <CardTitle>Waste by Section</CardTitle>
-              <CardDescription>
-                Comparison of waste production by different production sections
-              </CardDescription>
+
             </CardHeader>
             <CardContent className="pt-0">
               <div className="h-[400px]">
@@ -677,9 +669,7 @@ export default function WasteMonitoring() {
             <Card className="md:col-span-2">
               <CardHeader>
                 <CardTitle>Customer Waste Comparison</CardTitle>
-                <CardDescription>
-                  Detailed comparison of waste across customers
-                </CardDescription>
+
               </CardHeader>
               <CardContent className="pt-0">
                 <div className="h-[400px]">
@@ -719,10 +709,11 @@ export default function WasteMonitoring() {
       {/* Data table */}
       <Card>
         <CardHeader>
-          <CardTitle>Waste Data Records</CardTitle>
-          <CardDescription>
-            Showing data for {dateRange?.from ? format(dateRange.from, 'MMM dd, yyyy') : ''} to {dateRange?.to ? format(dateRange.to, 'MMM dd, yyyy') : ''}
-          </CardDescription>
+          <CardTitle>
+            Waste Data Records {dateRange?.from && dateRange?.to ? 
+              `(${format(dateRange.from, 'MMM dd, yyyy')} - ${format(dateRange.to, 'MMM dd, yyyy')})` : ''}
+          </CardTitle>
+
         </CardHeader>
         <CardContent>
           <div className="rounded-md border">

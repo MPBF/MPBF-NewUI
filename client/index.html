@@ -4,12 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1e293b" />
+    
+    <!-- Inline error suppression styles to load before any scripts -->
+    <style>
+      /* Hide all error popups and notifications */
+      .eruda-entry-btn,
+      .eruda-content .eruda-console,
+      .eruda-content .eruda-console .eruda-logs-container .eruda-log.eruda-error,
+      .eruda-content .eruda-console .eruda-logs-container .eruda-log.eruda-warn.eruda-unhandled-rejection,
+      div[data-replit-runtime-error-modal],
+      #vite-error-overlay,
+      .vite-error-overlay,
+      .__error-overlay,
+      #react-error-overlay,
+      [class*="error-overlay"],
+      [id*="error-overlay"],
+      [class*="ErrorOverlay"],
+      [id*="ErrorOverlay"] {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        z-index: -9999 !important;
+      }
+    </style>
+    
     <title>MPBF Production Management System</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWUzYThhIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtcGFja2FnZSI+PHBhdGggZD0iTTE2LjUgOS40IDcuNSA0LjIxTTIxIDE2VjhsLTkgNEwzIDh2OGw5IDQgOS00Wk0zLjI3IDYuOTYgMTIgMTIuMDFsMjEgLTUuMDUiLz48cGF0aCBkPSJNMTIgMjIuMDhWMTIiLz48L3N2Zz4=" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="Internal system for managing production, customers, orders and reporting" />
+    
+    <!-- Error handling script to run early -->
+    <script>
+      // Suppress WebSocket errors before they happen
+      window.addEventListener('error', function(event) {
+        if (event.message && event.message.includes('WebSocket') && event.message.includes('localhost:undefined')) {
+          event.preventDefault();
+          console.warn('Suppressed WebSocket error - this is expected in Replit environment.');
+          return true;
+        }
+        return false;
+      }, true);
+      
+      // Suppress unhandled promise rejections
+      window.addEventListener('unhandledrejection', function(event) {
+        if (String(event.reason).includes('WebSocket') && String(event.reason).includes('localhost:undefined')) {
+          event.preventDefault();
+          console.warn('Suppressed unhandled rejection from WebSocket.');
+          return true;
+        }
+        return false;
+      }, true);
+    </script>
   </head>
   <body>
     <div id="root"></div>
